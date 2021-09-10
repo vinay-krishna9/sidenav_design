@@ -1,0 +1,20 @@
+.card {
+    width: 85%;
+    background: none;
+    border: none;
+    margin: 0 auto;
+}
+
+.col {
+    padding: 15px;
+    height: 135px
+}
+
+.card1 {
+    background-image: linear-gradient(to right, #04997f, #1fa792, #32b6a6, #43c4b9, #55d3cd);
+}
+
+.card2 {
+    background-image: linear-gradient(to right, #047f99, #2089a7, #3393b6, #449dc5, #55a7d3);
+}
+

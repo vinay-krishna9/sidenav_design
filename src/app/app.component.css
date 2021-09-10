@@ -1,0 +1,16 @@
+.logo {
+    width: 100px;
+}
+
+.profile {
+    width: 80px;
+}
+
+.social {
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.social:hover {
+    text-shadow: 0 8px 8px rgba(107, 99, 99, 0.5);
+}

@@ -1,0 +1,60 @@
+<div class="wrapper">
+    <div [class]=" isopen == true ? 'sidenav-container active' : 'sidenav-container' ">
+        <div class="profile">
+            <div class="user">
+                <img src="assets/images/profile.png" alt="" class="w-25">
+                <div class="profile_name">Welcome <span class="fw-bold">User!</span></div>
+            </div>
+            <i class="fas fa-bars menu" (click)="openNav()" *ngIf="!isopen"></i>
+            <i class="fas fa-times menu" (click)="openNav()" *ngIf="isopen"></i>
+        </div>
+        <ul class="nav-list">
+            <li>
+                <a href="" routerLink="/sidenav/dashboard" routerLinkActive="current"
+                    [routerLinkActiveOptions]="{ exact: true }">
+                    <i class="fas fa-home"></i>
+                    <span class="link-name">Dashboard</span>
+                </a>
+                <span class="menu_tooltip">Dashboard</span>
+            </li>
+            <li>
+                <a href="" routerLink="/sidenav/checkinout" routerLinkActive="current"
+                    [routerLinkActiveOptions]="{ exact: true }">
+                    <i class="fas fa-clock"></i>
+                    <span class="link-name">Check IN/OUT</span>
+                </a>
+                <span class="menu_tooltip">Check IN/OUT</span>
+            </li>
+            <li>
+                <a href="">
+                    <i class="fas fa-briefcase"></i>
+                    <span class="link-name">Working Days</span>
+                </a>
+                <span class="menu_tooltip">Working Days</span>
+            </li>
+            <li>
+                <a href="">
+                    <i class="fas fa-mug-hot"></i>
+                    <span class="link-name">Holidays</span>
+                </a>
+                <span class="menu_tooltip">Holidays</span>
+            </li>
+            <li>
+                <a href="">
+                    <i class="fas fa-user-cog"></i>
+                    <span class="link-name">User Management</span>
+                </a>
+                <span class="menu_tooltip">User Management</span>
+            </li>
+        </ul>
+        <div class="logout-container"></div>
+        <div class="logout">
+            <i class="fas fa-sign-out-alt"></i>
+        </div>
+
+    </div>
+
+    <div class="main-container m-4">
+        <router-outlet></router-outlet>
+    </div>
+</div>
